@@ -2,11 +2,19 @@
 var isCookieJarOpen = null;
 
 function closeLid() {
-  /* answer here */
+  if (isCookieJarOpen == true) {
+    return false;
+  } else {
+    isCookieJarOpen = false;
+  }
 }
 
 function openLid() {
-  /* answer here */
+  if (isCookieJarOpen == true) {
+    return true;
+  } else {
+    isCookieJarOpen = true;
+  }
 }
 
 
